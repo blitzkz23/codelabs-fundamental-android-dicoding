@@ -24,8 +24,8 @@ class ListHeroAdapter(private val listHero: ArrayList<Hero>) : RecyclerView.Adap
 
 //	This function create a ViewHolder that will inflate the view
 	override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
-	val binding = ItemRowHeroBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-	return ListViewHolder(binding)
+		val binding = ItemRowHeroBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+		return ListViewHolder(binding)
 	}
 
 //	This function will bind the data into the viewholder based on the position of the data
