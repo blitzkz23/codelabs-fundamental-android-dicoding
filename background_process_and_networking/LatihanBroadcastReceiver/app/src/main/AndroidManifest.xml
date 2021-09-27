@@ -20,7 +20,9 @@
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
         </receiver>
-
+        <service
+            android:name=".DownloadService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
         <activity
             android:name=".SmsReceiverActivity"
             android:exported="true"
