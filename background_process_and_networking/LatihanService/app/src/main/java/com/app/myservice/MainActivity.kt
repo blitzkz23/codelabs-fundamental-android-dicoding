@@ -9,7 +9,7 @@ import android.os.IBinder
 import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
-	//		Variable for bound service connection
+//	Variable for bound service connection
 	private var mServiceBound = false
 	private lateinit var mBoundService: MyBoundService
 
@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
 		val btnStartBoundService: Button = findViewById(R.id.btn_start_bound_service)
 		val btnStopBoundService: Button = findViewById(R.id.btn_stop_bound_service)
 
+//		Listeners to start service
 		btnStartService.setOnClickListener {
 			val mStartServiceIntent = Intent(this, MyService::class.java)
 			startService(mStartServiceIntent)

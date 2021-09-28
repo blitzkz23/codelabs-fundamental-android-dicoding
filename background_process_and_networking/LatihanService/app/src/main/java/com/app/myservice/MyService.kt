@@ -20,6 +20,7 @@ class MyService : Service() {
 		throw UnsupportedOperationException("Not yet implemented")
 	}
 
+//	After the listener caught the start command this function will run
 	override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
 		Log.d(TAG, "Service dijalankan...");
 		serviceScope.launch {

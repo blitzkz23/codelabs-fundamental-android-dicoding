@@ -26,10 +26,8 @@ class MyBoundService : Service() {
 		}
 
 		override fun onFinish() {
-
 		}
 	}
-
 
 	override fun onCreate() {
 		super.onCreate()

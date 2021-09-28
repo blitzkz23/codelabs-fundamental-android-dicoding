@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
 //				try {
 ////					simulate process in background thread
 //					for (i in 0..10) {
-//						Thread.sleep(500)
+//						Thread.sleep(2000)
 //						val percentage = i * 10
 //						handler.post {
 ////							update ui in main thread
@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
 			lifecycleScope.launch(Dispatchers.Default) {
 //				simulate process in background thread
 				for (i in 0..10) {
-					delay(500)
+					delay(2000)
 					val percentage = i * 10
 					withContext(Dispatchers.Main) {
 //						update ui in main thread

@@ -17,6 +17,8 @@ class MyJobIntentService : JobIntentService() {
 		}
 	}
 
+//	This function will run after the listeners get caught from activity
+//	Intent service will stop bu itself and dont need to be stopped
 	override fun onHandleWork(intent: Intent) {
 		Log.d(TAG, "onHandleWork: Mulai....")
 		val duration = intent.getLongExtra(EXTRA_DURATION, 0)
