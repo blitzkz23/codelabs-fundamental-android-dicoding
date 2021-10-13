@@ -46,6 +46,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 		Toast.makeText(this, "Loading " + fileModel.filename + " data", Toast.LENGTH_SHORT).show()
 	}
 
+//	Simpan teks yang telah tertulis di edit teks, dan memasukkanya ke file fungsi file helper.
 	private fun saveFile() {
 		when {
 			binding.editTitle.text.toString().isEmpty() -> Toast.makeText(this, "Title harus diisi terlebih dahulu", Toast.LENGTH_SHORT).show()
@@ -62,6 +63,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 		}
 	}
 
+//	Kosongkan edit text dan tampilkan teks
 	private fun newFile() {
 		binding.editTitle.setText("")
 		binding.editFile.setText("")
